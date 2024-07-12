@@ -6,13 +6,19 @@ This Python script solves the Travelling Salesperson Problem (TSP) using a rando
 The script includes the following functionalities:
 
 Distance Calculation: Uses the Haversine formula to compute the distance between pairs of destinations based on their latitude and longitude coordinates.
+
 Random Tour Generation: Generates a random tour (permutation of destinations).
+
 Tour Length Calculation: Calculates the total distance of a given tour based on the precomputed distance matrix.
+
 Random Restart Hill Climbing: Optimizes the tour using a randomized hill climbing approach:
+
 Starts with a random tour.
 Iteratively swaps elements to find shorter tours.
 Uses random restarts to avoid local minima.
+
 Output: Prints the best tour found and its length in kilometers.
+
 Dependencies
 This script requires Python 3.x with standard libraries math, itertools, and random.
 
