@@ -20,10 +20,12 @@ Uses random restarts to avoid local minima.
 Output: Prints the best tour found and its length in kilometers.
 
 Dependencies
+
 This script requires Python 3.x with standard libraries math, itertools, and random.
 
 ## Usage
 To execute the script, simply run it in a Python environment:
+
 python rrhc.py
 
 ## Example Output
@@ -31,19 +33,33 @@ The script outputs the distance matrix and the best tour found along with its le
 
 Distance Matrix:
 Dam Square to Rijksmuseum: 1.43 km
+
 Dam Square to Anne Frank House: 0.61 km
+
 Dam Square to Van Gogh Museum: 1.60 km
+
 Dam Square to Vondelpark: 1.91 km
+
 Dam Square to Red Light District: 0.61 km
+
 Rijksmuseum to Anne Frank House: 1.67 km
+
 Rijksmuseum to Van Gogh Museum: 0.77 km
+
 Rijksmuseum to Vondelpark: 1.55 km
+
 Rijksmuseum to Red Light District: 1.30 km
+
 Anne Frank House to Van Gogh Museum: 1.74 km
+
 Anne Frank House to Vondelpark: 1.90 km
+
 Anne Frank House to Red Light District: 1.42 km
+
 Van Gogh Museum to Vondelpark: 1.21 km
+
 Van Gogh Museum to Red Light District: 1.09 km
+
 Vondelpark to Red Light District: 1.28 km
 
 Best tour: ['Anne Frank House', 'Rijksmuseum', 'Van Gogh Museum', 'Dam Square', 'Red Light District', 'Vondelpark']
@@ -51,6 +67,7 @@ Length of the tour: 6.73 km
 
 ## Notes
 Ensure that the latitude and longitude coordinates in the destinations dictionary are accurate for correct distance calculations.
+
 Adjust the num_restarts parameter in random_restart_hill_climbing function for potentially better results at the cost of computation time.
 
 ## Author
